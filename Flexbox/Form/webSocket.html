@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://github.com/bilibili/flv.js"></script>
+    <title>websokcet</title>
+</head>
+
+<body>
+    <div id="header">使用websocket</div>
+    <div id="content">
+        <div id="todos">
+            <h1>使用websocket</h1>
+        </div>
+        <script src="./static/flv.js"></script>
+        <video id="videoElement"></video>
+        <script>
+        if (flvjs.isSupported()) {
+            var videoElement = document.getElementById('videoElement');
+            var flvPlayer = flvjs.createPlayer({
+                type: 'flv',
+                url: 'http://example.com/flv/video.flv'
+            });
+            flvPlayer.attachMediaElement(videoElement);
+            flvPlayer.load();
+            flvPlayer.play();
+        }
+        var dome = JSON.stringify(videoElement);
+        </script>
+        <div id="canvas" style="background-color: gray; background-repeat: no-repeat;" width="400px;" height="220px;">
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
