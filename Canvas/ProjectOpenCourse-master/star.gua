@@ -1,0 +1,76 @@
+// 使用gualang来编程
+// 输出一个图形，展示编程的效果
+// /***
+// ***    使用gualang来画一个圆
+// */
+
+// 画一个边长为 33 像素的正三角形
+var x = 133
+var degree = 120
+forward(x)
+right(degree)
+forward(x)
+right(degree)
+forward(x)
+right(degree)
+
+// 实现一个函数
+// x，y为正方形的左上角坐标
+var step = 50
+const jump = function (x, y) {
+    penup()
+    forward(step)
+    pendown()
+    goto(x, y)
+}
+
+
+const square = function(x, y) {
+    jump(x, y)
+    // 设置朝向, 确保箭头朝向 右边
+    // 当然如果是用 goto 来画的话, 就不用关心朝向
+    setHeading(0)
+    // 循环画正方形
+    // 当然, 你可以用 goto 来画
+    // 只需要计算一下四个顶点的坐标 (这很简单)
+    var i = 0
+    while (i < 4) {
+        forward(100)
+        right(90)
+        i = i + 1
+    }
+}
+
+square(100, 100)
+
+// forward(220)
+// right(90)
+// forward(100)
+// right(90)
+// forward(100)
+// right(90)
+// forward(100)
+
+
+// 画一个正方形
+const square_1 = function (x, y) {
+    var n = 4
+    var i = 1
+    while (i < n) {
+        forward(x)
+        right(y)
+
+        i = i + 1
+    }
+}
+
+square_1(100, 90)
+// forward(100)
+// right(90)
+// forward(100)
+// right(90)
+// forward(100)
+// right(90)
+
+
+// 画一个圆
