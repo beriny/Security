@@ -2,14 +2,30 @@
 <html>
 <head>
 	<title>loading page</title>
+    <link rel="stylesheet" href=".././static/semantic.css">
 </head>
 <body>
 	<div id="app">
-		<div class="ui segment"></div>
-		<div class="ui container segment">
+		<div class="ui segment">header</div>
+		<div class="ui inverted green container segment">
 			<h3>1942277463</h3>
 		</div>
-		<div class="ui segment"></div>
+		<div class="ui segment">footer</div>
 	</div>
+    <script>
+    // 给定一个数组nums = [2, 7, 11, 15], target=9
+    // nums[1] + nums[2] = 9 => 2 + 7 = 9
+    // 返回得到i, j 
+        var twoSum = function(nums, target) {
+            for (var i = 0; i < nums.length; i++) {
+                var dif = target - nums[i]
+                for (var j = i + 1; j < nums.length; j++) {
+                    if (nums[j] == dif) {
+                        return [i, j]
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
