@@ -4,8 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix shop-client",
+    "client": "npm start --prefix shop-client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "r0ulier",
   "license": "ISC",
