@@ -16,5 +16,10 @@
     "koa-api": "^1.0.0",
     "koa-router": "^8.0.8",
     "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
   }
 }

@@ -332,12 +332,3 @@ const polygon = function(bianchang, bianshu=3) {
 
 polygon(100)
 polygon(50, 7)
-
-
-
-
-
-
-
-
-// .

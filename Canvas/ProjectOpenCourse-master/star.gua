@@ -17,31 +17,33 @@ right(degree)
 // 实现一个函数
 // x，y为正方形的左上角坐标
 var step = 50
+
+
 const jump = function (x, y) {
     penup()
     forward(step)
     pendown()
-    goto(x, y)
+    // goto(x, y) 与直接forward作用一样
 }
 
 
-const square = function(x, y) {
-    jump(x, y)
-    // 设置朝向, 确保箭头朝向 右边
-    // 当然如果是用 goto 来画的话, 就不用关心朝向
-    setHeading(0)
-    // 循环画正方形
-    // 当然, 你可以用 goto 来画
-    // 只需要计算一下四个顶点的坐标 (这很简单)
-    var i = 0
-    while (i < 4) {
-        forward(100)
-        right(90)
-        i = i + 1
-    }
-}
-
-square(100, 100)
+// const square = function(x, y) {
+//     jump(x, y)
+//     // 设置朝向, 确保箭头朝向 右边
+//     // 当然如果是用 goto 来画的话, 就不用关心朝向
+//     setHeading(90)
+//     // 循环画正方形
+//     // 当然, 你可以用 goto 来画
+//     // 只需要计算一下四个顶点的坐标 (这很简单)
+//     var i = 0
+//     while (i < 4) {
+//         forward(100)
+//         right(90)
+//         i = i + 1
+//     }
+// }
+//
+// square(100, 100)
 
 // forward(220)
 // right(90)
@@ -54,8 +56,9 @@ square(100, 100)
 
 // 画一个正方形
 const square_1 = function (x, y) {
+    jump(x, y)
     var n = 4
-    var i = 1
+    var i = 0
     while (i < n) {
         forward(x)
         right(y)
@@ -71,6 +74,111 @@ square_1(100, 90)
 // right(90)
 // forward(100)
 // right(90)
+const square = function(x, y, length) {
+    jump(x, y)
+    // 设置朝向, 确保箭头朝向 右边
+    // 当然如果是用 goto 来画的话, 就不用关心朝向
+    setHeading(0)
+    // 循环画正方形
+    // 当然, 你可以用 goto 来画
+    // 只需要计算一下四个顶点的坐标 (这很简单)
+    var i = 0
+    while (i < 4) {
+        forward(length)
+        right(90)
+        i = i + 1
+    }
+}
 
+square(100, 100, 100)
+
+
+const rect = function(x, y, w, h) {
+    jump(x, y)
+    // 设置朝向, 确保箭头朝向 右边
+    // 当然如果是用 goto 来画的话, 就不用关心朝向
+    setHeading(0)
+    // 循环画正方形
+    // 当然, 你可以用 goto 来画
+    // 只需要计算一下四个顶点的坐标 (这很简单)
+    var i = 0
+    while (i < 2) {
+        forward(w)
+        right(90)
+        forward(h)
+        right(90)
+        i = i + 1
+    }
+}
+
+rect(10, 10, 100, 50)
+
+
+const square5 = function(x, y, n) {
+        jump(x, y)
+        // 设置朝向, 确保箭头朝向 右边
+        // 当然如果是用 goto 来画的话, 就不用关心朝向
+        setHeading(0)
+        // 循环画正方形
+        // 当然, 你可以用 goto 来画
+        // 只需要计算一下四个顶点的坐标 (这很简单)
+        var j = 0
+        while (j < n){
+            var i = 0
+            while (i < 4) {
+                forward(30)
+                right(90)
+                i = i + 1
+            }
+            forward(30)
+            j = j + 1
+        }
+}
+
+square5(0, 0, 5)
+
+
+
+// 作业 4 和作业 3 的不同之处在于每个正方形的左上角坐标不同
+// 因此在计算出每个左上角的坐标之后，参考作业 3 的提示即可完成
+
+const square5_10 = function(x, y, n, r, t) {
+            // 设置朝向, 确保箭头朝向 右边
+            // 当然如果是用 goto 来画的话, 就不用关心朝向
+            setHeading(0)
+            // 循环画正方形
+            // 当然, 你可以用 goto 来画
+            // 只需要计算一下四个顶点的坐标 (这很简单)
+            var j = 0
+            while (j < n){
+                var i = 0
+                while (i < 4) {
+                    forward(r)
+                    right(90)
+                    i = i + 1
+                }
+                penup()
+                forward(r + t)
+                pendown()
+                j = j + 1
+            }
+
+}
+
+square5_10(0, 0, 5, 30, 10)
 
 // 画一个圆
+
+// 实现一个圆形函数
+// x y 是圆形的圆心
+// r 是半径
+// circle(x, y, r)
+//
+// var x = 50
+// var y = 50
+// var r = 15
+
+
+// const circle = function(x, y, r) {
+//
+// }
