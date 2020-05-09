@@ -37,7 +37,7 @@ app.use("/api/users", users);
 // 使用中间件profis.js
 app.use("/api/profiles", profiles);
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
