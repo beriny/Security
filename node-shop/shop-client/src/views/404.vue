@@ -12,5 +12,10 @@ export default {
 </script>
 
 <style scoped>
-
+.notfound {
+    width: auto;
+    height: auto;
+    background-image: url('.././assets/img/page.jpg');
+    background-position: center;
+}
 </style>
