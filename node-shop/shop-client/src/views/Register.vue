@@ -124,7 +124,7 @@ export default {
 .register {
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/page.jpg');
+    background-image: url('../assets/img/nineng.jpg');
 }
 
 .form_container {
@@ -139,7 +139,7 @@ export default {
 
 .title {
     width: 100px;
-    height: 25px;
+    height: 85px;
 }
 
 .registerForm {

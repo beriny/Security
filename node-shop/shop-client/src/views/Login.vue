@@ -16,7 +16,7 @@
             </el-form-item>
 
             <el-form-item>
-              <el-button type="primary" class="submit-btn" @click="submitForm('loginUser')">登录</el-button>
+              <el-button type="primary" class="submit-btn" @click="submitForm('loginForm')">登录</el-button>
               <div class="tiparea">
                   <p>还没有账号？现在<router-link to="/register">注册</router-link></p>
               </div>
@@ -84,15 +84,6 @@ export default {
                         // 跳转到首页
                         this.$router.push("/index");
                     });
-                    // submitForm(formName) {
-                    //    this.$refs[formName].validate((valid) => {
-                    //      if (valid) {
-                    //        alert('submit!');
-                    //      } else {
-                    //        console.log('error submit!!');
-                    //        return false;
-                    //      }
-                    //    });
                 }
         });
       }
