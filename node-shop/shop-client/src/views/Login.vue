@@ -15,7 +15,6 @@
                 <el-input type="password" v-model="loginUser.password" placeholder="请输入密码"></el-input>
             </el-form-item>
 
-
             <el-form-item>
               <el-button type="primary" class="submit-btn" @click="submitForm('loginUser')">登录</el-button>
               <div class="tiparea">
