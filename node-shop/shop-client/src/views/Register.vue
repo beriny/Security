@@ -40,12 +40,12 @@ export default {
     components: {},
     data() {
         var validatePass2 = (rules, value, callback) => {
-         if (value !== this.regsiterUser.password) {
-          callback(new Error('两次输入密码不一致!'));
-        } else {
-          callback();
-        }
-      };
+            if (value !== this.regsiterUser.password) {
+                callback(new Error('两次输入密码不一致!'));
+            } else {
+                callback();
+            }
+        };
         return {
             regsiterUser: {
                 name: "",
@@ -98,24 +98,24 @@ export default {
     },
     methods: {
         submitForm(formName) {
-        this.$refs[formName].validate((valid) => {
-          if (valid) {
-            this.$axios.post('/api/users/regsiter', this.regsiterUser)
-                .then(res => {
-                    // 注册成功
-                    res.this.$message({
-                        message: "账号注册成功！",
-                        type: "success"
+            this.$refs[formName].validate((valid) => {
+                if (valid) {
+                    this.$axios.post('/api/users/regsiter', this.regsiterUser)
+                    .then(res => {
+                        // 注册成功
+                        res.this.$message({
+                            message: "账号注册成功！",
+                            type: "success"
+                        });
+                    })
+                    .catch(err => {
+                        return Promise.reject(err);
                     });
-                })
-                .catch(err => {
-                    return Promise.reject(err);
-                });
-            }
+                }
 
-          this.$router.push("/login");
-        });
-      }
+                this.$router.push("/login");
+            });
+        }
     }
 };
 </script>

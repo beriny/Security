@@ -67,26 +67,26 @@ export default {
     methods: {
         submitForm(formName) {
             this.$refs[formName].validate((valid) => {
-              if (valid) {
-                this.$axios.post('/api/users/login', this.loginUser)
-                    .then(res => {
-                        // 登录成功, token
-                        // console.log(res);
-                        const { token } = res.data;
+                if (valid) {
+                    this.$axios.post('/api/users/login', this.loginUser)
+                        .then(res => {
+                            // 登录成功, token
+                            // console.log(res);
+                            const { token } = res.data;
 
-                        // 存储到localstorage
-                        localStorage.setItem('eleToken', token);
+                            // 存储到localstorage
+                            localStorage.setItem('eleToken', token);
 
-                        // 解析token
-                        const decode = JwtDecode(token);
-                        console.log(decode);
+                            // 解析token
+                            const decode = JwtDecode(token);
+                            console.log(decode);
 
-                        // 跳转到首页
-                        this.$router.push("/index");
-                    });
+                            // 跳转到首页
+                            this.$router.push("/index");
+                        });
                 }
-        });
-      }
+            });
+     }
     }
 };
 </script>

@@ -7,9 +7,7 @@
 <script>
 export default {
   name: "Index",
-  components: {
-      
-  }
+  components: {}
 };
 </script>
 
