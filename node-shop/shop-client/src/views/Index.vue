@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    初始化页面
+    <h1>初始化页面</h1>
   </div>
 </template>
 

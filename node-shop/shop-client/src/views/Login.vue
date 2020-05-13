@@ -96,7 +96,7 @@ export default {
 .login {
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/page.jpg');
+    background-image: url('../assets/static/img/page.jpg');
     background-position: center;
     background-size: cover;
 }
