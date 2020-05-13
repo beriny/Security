@@ -15,7 +15,7 @@ export default {
 .notfound {
     width: auto;
     height: auto;
-    background-image: url('.././assets/img/page.jpg');
+    background-image: url('.././assets/static/img/page.jpg');
     background-position: center;
 }
 </style>
