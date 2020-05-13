@@ -2,8 +2,8 @@
     <div class="login">
         <section class="ui container very padding segment">
             <div class="ui container segment">
-                <span class="title">
-                    <h2 class="ui title segment">奇果鲜生登录</h2>
+                <span class="ui text segment">
+                    <h2 class="ui inverted blue container segment">奇果鲜生登录</h2>
                 </span>
             </div>
         </section>
@@ -104,7 +104,7 @@ export default {
 .ui.container.segment {
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/caomei.jpg');
+    background-image: url('../assets/static/img/caomei.jpg');
     background-repeat: no-repeat;
 }
 </style>
