@@ -1,6 +1,6 @@
 <template>
     <div class="notfound">
-        <span class="page_not">页面不存在</span>
+        <h2><span class="ui container segment">页面不存在</span></h2>
     </div>
 </template>
 
@@ -13,9 +13,14 @@ export default {
 
 <style scoped>
 .notfound {
-    width: auto;
-    height: auto;
+    width: 80rem;
+    height: 80rem;
     background-image: url('.././assets/static/img/page.jpg');
     background-position: center;
+    background-size: contain;
+}
+
+.ui.container.segment {
+    translate: -100%, 0%;
 }
 </style>
