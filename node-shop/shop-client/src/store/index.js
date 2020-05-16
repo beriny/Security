@@ -48,9 +48,6 @@ const actions = {
 };
 
 export default new Vuex.Store({
-    // modules: {
-    //
-    // }
     state,
     getters,
     mutations,

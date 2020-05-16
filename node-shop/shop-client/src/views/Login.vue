@@ -11,6 +11,7 @@
             <el-form-item label="邮箱" prop="email">
                 <el-input v-model="loginUser.email" placeholder="请输入邮箱"></el-input>
             </el-form-item>
+            
             <el-form-item label="密码" prop="password">
                 <el-input type="password" v-model="loginUser.password" placeholder="请输入密码"></el-input>
             </el-form-item>
@@ -111,15 +112,15 @@ export default {
 .login {
     width: 100%;
     height: 100%;
-    background-image: url('../assets/static/img/page.jpg');
+    background-image: url('../assets/static/img/caomei.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .ui.container.segment {
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/static/img/caomei.jpg');
-    background-repeat: no-repeat;
+    width: 12em;
+    height: 12em;
+    background: pink;
+    background-image: url('../assets/static/img/show.jpg');
 }
 </style>
