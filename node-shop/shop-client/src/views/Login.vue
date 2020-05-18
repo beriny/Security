@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import JwtDecode from 'jwt-decode';
+import JwtDecode from "jwt-decode";
 
 export default {
     name: "login",
