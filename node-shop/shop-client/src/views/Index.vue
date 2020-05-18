@@ -17,5 +17,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.index {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 </style>

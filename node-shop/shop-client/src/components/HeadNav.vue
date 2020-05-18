@@ -11,20 +11,23 @@
                     <img class="ui image" src=".././assets/mihoutao.png" alt="">
                     <div class="welcome">
                         <p class="name comename">欢迎</p>
-                        <p class="name avatarname">{{ user.name }}</p>
+                        <p class="name avatarname">
+                            {{ user.name }}
+                            <span class="username">
+                                <!-- 下拉箭头 -->
+                                <el-dropdown trigger="click" @command="setDialogInfo">
+                                    <span class="el-dropdown-link">
+                                     更多 <i class="el-icon-arrow-down el-icon--right"></i>
+                                    </span>
+                                  <el-dropdown-menu slot="dropdown">
+                                    <el-dropdown-item command="info">个人信息</el-dropdown-item>
+                                    <el-dropdown-item command="logout">退出</el-dropdown-item>
+                                  </el-dropdown-menu>
+                                </el-dropdown>
+                            </span>
+                        </p>
                     </div>
-                    <span class="username">
-                        <!-- 下拉箭头 -->
-                        <el-dropdown trigger="click" @command="setDialogInfo">
-                          <span class="el-dropdown-link">
-                            更多信息<i class="el-icon-arrow-down el-icon--right"></i>
-                          </span>
-                          <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item command="info">个人信息</el-dropdown-item>
-                            <el-dropdown-item command="logout">退出</el-dropdown-item>
-                          </el-dropdown-menu>
-                        </el-dropdown>
-                    </span>
+
                 </div>
             </el-col>
         </el-row>
@@ -54,6 +57,7 @@ export default {
         },
         showInfoList() {
             console.log("个人信息！");
+            this.$router.push("/infoshow");
         },
         logout() {
             // console.log("退出！");
@@ -81,10 +85,10 @@ export default {
 }
 
 .ui.large.image {
-    width: 12px;
+    width: 22px;
     height: auto;
-    position: absolute;
-    transform: translate(50% 50%);
+    position: relative;
+    transform: translate(10%, 50%);
 }
 
 .title {
@@ -125,7 +129,7 @@ export default {
     color: blue;
     font-weight: bolder;
     position: relative;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -30%);
 }
 
 .username {

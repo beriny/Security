@@ -5,6 +5,7 @@ import Register from ".././views/Register.vue"
 import Login from ".././views/Login.vue"
 import NotFound from ".././views/404.vue"
 import Home from ".././views/Home.vue"
+import InfoShow from ".././views/InfoShow.vue"
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,8 @@ const router = new VueRouter({
         component: Index,
         children: [
             { path: "", component: Home },
-            { path: "/home", name: "home", component: Home }
+            { path: "/home", name: "home", component: Home },
+            { path: "/infoshow", name: "infoshow", component: InfoShow }
         ]
       },
       {
