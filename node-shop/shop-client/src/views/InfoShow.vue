@@ -20,16 +20,12 @@
             </el-col>
         </el-row>
     </div>
-    <LeftManu></LeftManu>
 </template>
 
 <script>
-import LeftManu from "../components/LeftManu.vue";
 export default {
     name: "infoshow",
-    components: {
-        LeftManu,
-    },
+    components:{},
     computed: {
         user() {
             return this.$store.getters.user;

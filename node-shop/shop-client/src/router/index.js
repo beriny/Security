@@ -50,7 +50,7 @@ const router = new VueRouter({
     ]
 });
 
-// 路由守卫
+// 路由守卫, 全局前置守卫 to是跳转到的路由， from当前的路由， next()是回调的方法【一定要调用该方法来 resolve 这个钩子】
 router.beforeEach((to, from, next) => {
     const isLogin = localStorage.eleToken ? true : false;
     if (to.path == "/login" || to.path == "/register") {
