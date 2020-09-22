@@ -47,7 +47,7 @@ const product = function(array) {
 // 1. 如果 n < 0，就把 n 的值赋值成 -n
 // 2. 返回 n 的值（很重要，一定要 return n）
 const abs = function(n) {
-
+    
 }
 
 

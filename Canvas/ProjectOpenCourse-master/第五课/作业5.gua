@@ -29,7 +29,7 @@ const zfill = function(n, width) {
     // 把 n 的位数变成 width 这么长，并在右对齐，不足部分用 0 补足并返回
     // 具体请看测试, 注意, 返回的是
 
-    ing 类型
+    // int 类型
 
     // 返回 string 类型
 

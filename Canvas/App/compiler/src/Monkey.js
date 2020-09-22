@@ -1,11 +1,11 @@
 import React , { Component } from 'react';
+import ReactDOM from 'react-dom';
 import * as bootstrap from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import { Panel, FormGroup, FormControl, Button } from 'bootstrap';
 
 class Monkey extends Component {
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     render () {
@@ -13,16 +13,15 @@ class Monkey extends Component {
             height: 480
         };
         return (
-            <bootstrap.Panel header="Monkey Compiler" bsStyle="success">
-                <bootstrap.FormGroup>
-                    <bootstrap.FormControl componentClass = "textarea"
-                        style={textAreaStyle}
-                        placeholder="Enter your code" />
-                </bootstrap.FormGroup>
-                <bootstrap.Button bsStyle="danger">
-                  Lexing
-                </bootstrap.Button>
-            </bootstrap.Panel>
+            <Panel header="Monkey Compiler" bsStyle="success">
+                <FormGroup>
+                    <FormControl componentClass="textarea"
+                        style={ textAreaStyle }
+                        placeholder="Enter your code"
+                    />
+                </FormGroup>
+                <Button bsStyle="danger">Lexing</Button>
+            </Panel>
         );
     }
 }
