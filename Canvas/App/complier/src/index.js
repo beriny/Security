@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Monkey from './Monkey';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Monkey />,
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
