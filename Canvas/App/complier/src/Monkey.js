@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as bootstrap from 'react-bootstrap';
+import * from 'react-bootstrap';
 
 class Monkey extends Component {
     constructor(props) {
@@ -21,8 +21,9 @@ class Monkey extends Component {
                         Lexing
                     </bootstrap.Button>
                 </bootstrap.Panel>
-            );
+            )
         };
 
+};
 
 export default Monkey;

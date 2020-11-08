@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <Monkey />
     </div>
-  );
-}
+  )
+
+};
 
 export default App;

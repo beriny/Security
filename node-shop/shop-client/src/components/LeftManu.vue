@@ -6,6 +6,7 @@
                     <i class="fa fa-margin fa-server"></i>
                     <span slot="title">首页</span>
                 </el-menu-item>
+
                 <template v-for="item in items" >
                     <el-submenu v-if="item.children" :index="item.path" :key="item.path">
                         <template slot="title">
@@ -19,6 +20,7 @@
                         </router-link>
                     </el-submenu>
                 </template>
+
             </router-link>
         </el-menu>
     </div>
@@ -27,7 +29,6 @@
 <script>
 export default {
     name: "leftmanu",
-    components: {},
     data() {
         return {
             items: [
