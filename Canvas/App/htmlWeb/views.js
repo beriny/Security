@@ -42,4 +42,4 @@ superagent.post('/api/pet').then(console.log).catch(console.error);
   }
 })();
 
-app.listen(3001)
+app.listen(3000)
