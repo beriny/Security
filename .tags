@@ -1,0 +1,8 @@
+tornado	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.ioLoop$/;"	namespace	line:1
+ioLoop	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.ioLoop$/;"	namespace	line:1
+tornado	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.web$/;"	namespace	line:2
+web	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.web$/;"	namespace	line:2
+MainHandler	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^class MainHandler(tornado.web.RequestHandler):$/;"	class	line:4
+get	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^    def get(self):$/;"	member	line:5	class:MainHandler
+make_app	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^def make_app():$/;"	function	line:8
+main	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^def main():$/;"	function	line:13

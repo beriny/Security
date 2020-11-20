@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+tornado	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.ioLoop$/;"	namespace	line:1
+ioLoop	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.ioLoop$/;"	namespace	line:1
+tornado	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.web$/;"	namespace	line:2
+web	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^import tornado.web$/;"	namespace	line:2
+MainHandler	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^class MainHandler(tornado.web.RequestHandler):$/;"	class	line:4
+get	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^    def get(self):$/;"	member	line:5	class:MainHandler
+make_app	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^def make_app():$/;"	function	line:8
+main	/Users/mac/Documents/code/python/web/html/html5/Canvas/App/htmlWeb/tornado/main.py	/^def main():$/;"	function	line:13
